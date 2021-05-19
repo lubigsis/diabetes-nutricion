@@ -5,95 +5,101 @@
 }
 
 body{
-    background-color: #f6f5f5;
+    background-color: #f2f2f2;
     font-family: 'Roboto', sans-serif;
+    color: #404040;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #404040;
+}
+
+ul{
+    list-style: none;
 }
 
 .contenedor{
     width: 90%;
     margin: auto;
+   
 }
 
-header{
-    padding: 30px 0;
-}
-
-header .contenedor{
+.nav-main{
+    font-size: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
+    padding: 20px 0;
 }
 
-header .logotipo{
-    color: #2ec1ac;
+.nav-main .logotipo{
     font-size: 40px;
-    font-weight: normal;
+    color: #00cca3;
 }
 
-header nav a{
-    color: #1b262c;
-    text-decoration: none;
-    margin-right: 20px;
+.nav-menu{
+    display: flex;
 }
 
-header nav a:hover,
-header nav a.activo{
-    color: #323edd;
+.nav-menu li{
+    padding: 20px;
+}
+
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #00cca3;
+    color: #1a1a1a;
 }
 
 /***********************************************Imagen principal*****************/
 
 .foto-principal{
-    font-size: 16px;
-    min-height: 31.25em;
-    color: #f8b400;
-    background: linear-gradient(rgba(77, 239, 194, .15) 0%, #000 110%),
-    url(../img/fondo2.jpg);
-    /*background-position: center center;*/
-    background-size: cover; /*q' la img abarque el 100% disponible si cambio tamaño de pantalla*/
-    margin-bottom: 3.12em;
+    width: 100%;
+    height: 510px;
+    background-image: /*linear-gradient(rgba(0, 0, 0, .30),*/ url(fondo2.jpg);
+    object-fit: cover;
+    background-position: 50%;
+    padding-bottom: 70px;
     display: flex;
-    align-items: flex-end;
-    text-align: right; /*solo pude posicionar el título y los botones a la derecha, Why??*/
-    
-    
-}
-
-.foto-principal .contenedor{
-    margin: 0 auto;
-    margin-bottom: 6.25em;
-       
-}
-
-.foto-principal .titulo{
-    font-size: 2em;
-    margin-bottom: 0.4em;
-}
-
-.foto-principal .descripcion{
-    font-size: 1em;
-    line-height: 1.75em;
-    max-width: 50%;
-    margin-bottom: 1.25em;
-    margin-left: 50%; /*¿Otra manera de posicionar a la derecha la descripción? con position?*/
-  
-}
-
-.foto-principal .boton{
-    background: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 0.31em;
-    padding: 0.9em 1.8em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     color: #fff;
-    margin-right: 1.2em;
-    cursor: pointer;
-    transition: .3s ease all;
-    font-size: 1em;
+    
 }
 
-.foto-principal .boton:hover{
-    background: #fff;
-    color: #000;
+.boton{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #00cca3;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+    border-radius: 5%;
+}
+
+.boton:hover{
+    opacity: .7;
+    
+}
+
+
+.foto-principal h3,
+.foto-principal p   {
+    margin: 10px;
+
+}
+
+hr{
+    margin: 10px 0 0 0;
+    color: #00cca3;
 }
 
 /********************************************Responsive design*********************/
