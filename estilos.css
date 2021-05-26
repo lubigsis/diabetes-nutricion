@@ -6,7 +6,7 @@
 
 body{
     background-color: #f2f2f2;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'KoHo', sans-serif;
     color: #404040;
     font-size: 16px;
 }
@@ -36,8 +36,9 @@ ul{
 }
 
 .nav-main .logotipo{
-    font-size: 40px;
+    font-size: 50px;
     color: #00cca3;
+    font-family: 'Pompiere', cursive;
 }
 
 .nav-menu{
@@ -58,16 +59,30 @@ ul{
 
 .foto-principal{
     width: 100%;
-    height: 510px;
-    background-image: /*linear-gradient(rgba(0, 0, 0, .30),*/ url(fondo2.jpg);
+    height: 500px;
+    background-image: url(fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     object-fit: cover;
-    background-position: 50%;
+    background-position: center;
     padding-bottom: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     color: #fff;
+       
+}
+
+.foto-principal:before{
+    content: "";
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    top: 72px;
+    left: 63px;
+    background: linear-gradient(#000066,#000 20%);
+    opacity: 0.5;
     
 }
 
@@ -83,6 +98,7 @@ ul{
     border: 1px solid #fff;
     margin: 10px 0;
     border-radius: 5%;
+    z-index: 2;
 }
 
 .boton:hover{
@@ -91,15 +107,77 @@ ul{
 }
 
 
-.foto-principal h3,
+.foto-principal h2,
 .foto-principal p   {
     margin: 10px;
+    z-index: 3;
+    font-size: 23px;
 
 }
 
 hr{
     margin: 10px 0 0 0;
     color: #00cca3;
+}
+
+/**********************************************************ESPECIALIDADES******/
+
+.contenedor-especialidades{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-especialidades img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 70px;
+    
+}
+
+.contenedor-especialidades h3{
+    text-align: center;
+    margin: 4px;
+}
+
+
+/********************************************************UBICACION*******/
+
+.contenedor-ubicacion{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: auto;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.contenedor-ubicacion h2{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contenedor-footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background:  #004d3d;
+ 
+}
+
+.contenedor-footer a{
+    padding: 20px;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
 }
 
 /********************************************Responsive design*********************/

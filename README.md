@@ -20,3 +20,20 @@ Falta:
 . Desarrollar el resto del sitio
 
 .............................................................................................
+
+25/05/2021:
+
+.Coloqué efecto de capa oscura en la imagen principal.
+.Google fonts
+.Agregué 2 imágenes de ejemplo para las especialidades.
+. Incluí ejemplo de ubicación del consultorio.
+.Realicé el footer.
+
+Falta:
+
+.Responsive design
+.Info real
+.Formulario de contacto
+.Optimizar colores
+
+........................................................................
