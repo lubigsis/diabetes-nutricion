@@ -37,3 +37,16 @@ Falta:
 .Optimizar colores
 
 ........................................................................
+
+12/06/2021:
+
+. Agregué formulario de contacto.
+. Coloqué icono de whatsapp.
+. Oculté la capa oscura de la imagen principal.
+. Le dí más margin top a las diferentes secciones: header, información, ubicación, contacto.
+
+Falta:
+. Mejorar estilos: otra imagen principal, colores.
+. Agregar información real.
+. Responsive design.
+. Editar footer.
